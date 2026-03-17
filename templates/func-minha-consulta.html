@@ -1,0 +1,79 @@
+{% extends 'base.html'%}
+  {% block tituloPagina%}
+    <title>Minhas Consultas</title>
+  {% endblock %}
+{% block conteudoPagina%}
+    <main>      
+         {% if tipo_site == 'nutricionista' %}
+            <div class="container-tabela-gerencia">
+                <div class="cabecalho-gerenciamento">
+                    <h1 class="section-title">Minhas Consultas</h1>
+                    <div class="barra-pesquisa">
+                        <input type="text" placeholder="Pesquisar consultas..." id="input-pesquisa-usuarios">
+                        <button class="botao-pesquisa">🔍</button>
+                    </div>      
+                </div>
+
+                <div class="filtros-tabela">
+                
+                </div>
+
+                <div class="tabela" id="tabela-consultas">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Status</th>
+                                <th>Data e Hora</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cards-tabela" id="lista-consultas-cards">
+                </div>  
+            </div>
+         {% elif tipo_site == 'paciente' %}
+             <div class="container-tabela-gerencia">
+                <div class="cabecalho-gerenciamento">
+                    <h1 class="section-title">Minhas Consultas</h1>
+                    <div class="barra-pesquisa">
+                        <input type="text" placeholder="Pesquisar consultas..." id="input-pesquisa-usuarios">
+                        <button class="botao-pesquisa">🔍</button>
+                    </div>      
+                </div>
+
+                <div class="filtros-tabela">
+                
+                </div>
+
+                <div class="tabela" id="tabela-consultas">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Médico Responsável</th>
+                                <th>Status</th>
+                                <th>Data e Hora</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cards-tabela" id="lista-consultas-cards">
+                </div>  
+            </div>
+         {% endif %}  
+        <div>
+                <button id="botao-tema">🌙</button>
+        </div>
+
+    </main>
+{% endblock %}

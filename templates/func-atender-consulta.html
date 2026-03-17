@@ -1,0 +1,76 @@
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    {% extends 'base.html'%}
+    {% block conteudoPagina%}
+        <main>           
+            <div class="container-detalhe-consulta">
+                <h1>Informações da Consulta</h1>
+                <a href="/consulta/minhasconsultas">Voltar</a>
+                <section class="conteudo-detalhe-consulta">
+                    <div class="detalhes" id="detalhes-paciente">
+                        <h1>Detalhes do paciente:</h1>
+                        <ul>
+                           <li class="grupo-info">
+                                <strong>Nome:</strong>
+                                <span id="nome">Ronalod</span>
+                           </li>
+                           <li class="grupo-info">
+                                <strong>Sobrenome:</strong>
+                                <span id="sobrenome"></span>
+                           </li>
+
+                            <li class="grupo-info">
+                                <strong>Gênero:</strong>
+                                <span id="genero"></span>
+                           </li>
+                             <li class="grupo-info">
+                                <strong>Idade:</strong>
+                                <span id="idade"></span>
+                           </li>
+
+                            <li class="grupo-info">
+                                <strong>Peso:</strong>
+                                <span id="peso"></span>
+                           </li>
+
+                           <li class="grupo-info">
+                                <strong>Altura:</strong>
+                                <span id="altura"></span>
+                           </li>
+
+                           <li class="grupo-info">
+                                <strong>Possui doenca crônica:</strong>
+                                <span id="doenca-cronica"></span>
+                           </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="detalhes" id="detalhes-consulta">
+                        <h1>Detalhes da Consulta:</h1>
+                        <ul>
+                           <li class="grupo-info">
+                                <strong>Data e Hora:</strong>
+                                <span id="data-hora"></span>
+                           </li>
+                           <li class="grupo-info">
+                            <strong>Motivo:</strong>
+                            <p id="motivo">Motivo</p>
+                           </li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="acoes-consulta">
+                        <div class="btn-group">
+                           
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <button id="botao-tema">🌙</button>
+            </div>
+        </main>
+    {% endblock %}

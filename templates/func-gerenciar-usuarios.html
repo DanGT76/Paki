@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block tituloPagina %}
+    <title>Gerenciar Usuários - P.A.K.I</title>
+{% endblock %}
+{% block conteudoPagina %}
+<main>
+    <div class="container-tabela-gerencia">
+        <div class="cabecalho-gerenciamento">
+            <h1 class="section-title">Gerenciar Usuários</h1>
+            <div class="barra-pesquisa">
+                <input type="text" placeholder="Pesquisar usuários..." id="input-pesquisa-usuarios">
+                <button class="botao-pesquisa">🔍</button>
+            </div>
+        </div>
+
+        <div class="filtros-tabela">
+                
+        </div>
+
+        <div class="tabela" id="tabela-usuarios">
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Tipo</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela-usuarios">
+                <tr>
+                    <td>
+                        Carregando usuários...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div> 
+
+        <div class="cards-tabela" id="lista-usuarios-cards">
+          
+        </div>  
+
+
+        <div>
+            <button id="botao-tema">🌙</button>
+        </div>
+    </div>   
+</main>
+ 
+{% endblock %}
